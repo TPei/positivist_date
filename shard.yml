@@ -1,0 +1,13 @@
+name: positivist_date
+version: 0.1.0
+
+authors:
+  - TPei <t.s.peikert@gmail.com>
+
+targets:
+  positivist_date:
+    main: src/positivist_date.cr
+
+crystal: 0.22.0
+
+license: MIT
