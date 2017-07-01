@@ -151,14 +151,3 @@ class PositivistDate
     positivist_year + (START_YEAR - 1)
   end
 end
-
-# Can be used as Time would be
-puts pd = PositivistDate.new(324, 6, 13, 13, 37)
-puts pd.hour # => 13
-puts pd.saturday? # => true
-
-# allows converting to time instance
-puts pd.to_time # =>
-
-# PostivistDate instances can be created from Time instances
-puts PositivistDate.from_time Time.now # =>

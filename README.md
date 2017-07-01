@@ -28,7 +28,7 @@ pd.hour # => 13
 pd.saturday? # => true
 
 # allows converting to time instance
-pd.to_time # => 2012-06-30 13:37:00
+pd.to_time # => #<Time:0x10c581fa0>
 
 # PostivistDate instances can be created from Time instances
 PositivistDate.from_time Time.now # => #<PositivistDate:0x1084f9f50>
