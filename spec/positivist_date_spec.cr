@@ -31,6 +31,20 @@ describe PositivistDate do
     end
   end
 
+  describe ".now" do
+    it "creates a PositivistDate for right now" do
+      pd = PositivistDate.now
+      t = Time.now
+      t2 = pd.to_time
+      t.year.should eq t2.year
+      t.month.should eq t2.month
+      t.day.should eq t2.day
+      t.hour.should eq t2.hour
+      t.minute.should eq t2.minute
+      t.second.should eq t2.second
+    end
+  end
+
   describe "#to_time" do
     it "converts into a correct time object" do
       t = Time.new(2017, 6, 24, 10, 10, 10)

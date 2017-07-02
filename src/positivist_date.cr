@@ -49,6 +49,10 @@ class PositivistDate
     self.new(year: year, month: month, day: day, hour: t.hour, minute: t.minute, second: t.second)
   end
 
+  def self.now
+    PositivistDate.from_time(Time.now)
+  end
+
   def to_time
     _year = PositivistDate.positivist_year_to_year(year)
 
