@@ -19,8 +19,8 @@ describe PositivistDate do
         t = Time.new(2017, 6, 24, 10, 10, 10)
         pd = PositivistDate.from_time(t)
         pd.year.should eq t.year - 1788
-        pd.month.should eq 6
-        pd.month_name.should eq "Saint Paul"
+        pd.month.should eq 7
+        pd.month_name.should eq "Charlemagne"
         pd.day.should eq 7
         pd.hour.should eq t.hour
         pd.minute.should eq t.minute

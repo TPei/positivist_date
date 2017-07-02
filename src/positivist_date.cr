@@ -43,8 +43,8 @@ class PositivistDate
       return self.new(year: year, special: WOMENS_DAY)
     end
 
-    month = t.day_of_year / 28
-    day = t.day_of_year - month  * 28
+    month = t.day_of_year / 28 + 1
+    day = t.day_of_year - (month - 1)  * 28
 
     self.new(year: year, month: month, day: day, hour: t.hour, minute: t.minute, second: t.second)
   end
@@ -91,7 +91,7 @@ class PositivistDate
     _month = month; _day = day
     return nil if _month.nil? || _day.nil?
 
-    _month * 28 + _day
+    (_month-1) * 28 + _day
   end
 
   def month_name
